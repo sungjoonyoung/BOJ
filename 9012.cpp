@@ -25,7 +25,7 @@ int main(void) {
 					key = 0;
 					break;
 				}
-				else if (arr[idx-1] == '(') idx--;
+				else if (arr[idx - 1] == '(') idx--;
 				else {
 					cout << "NO" << "\n";
 					key = 0;
@@ -37,6 +37,6 @@ int main(void) {
 			if (idx == 0)cout << "YES" << "\n";
 			else cout << "NO" << "\n";
 		}
-		
+
 	}
 }
