@@ -6,7 +6,5 @@ int main(void){
     int N,M;
     cin>>N>>M;
     if(N>M)cout<<(M-1)*2+1;
-    else{
-        cout<<(N-1)*2;
-    }
+    else cout<<(N-1)*2;
 }
