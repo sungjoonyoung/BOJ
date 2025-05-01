@@ -1,21 +1,18 @@
-#include <iostream>
-#include <string>
-using namespace std;
-int arr[2000];
+#define _CRT_SECURE_NO_WARNINGS
+#include<stdio.h>
+int arr[1000];
 int main(void) {
-	ios::sync_with_stdio(0);
-	cin.tie(0);
-	int many;
-	cin >> many;
-	int tmp;
-	for (int i = 0; i < many; i++) {
-		cin >> tmp;
-		tmp = tmp + 100;
-		arr[tmp]++;
+	int N;
+	scanf("%d", &N);
+
+	for (int i = 0;i < N;i++) {
+		int in;
+		scanf("%d", &in);
+		arr[in + 100]++;
 	}
 
-	int what;
-	cin >> what;
-	what = what + 100;
-	cout << arr[what];
+	int T;
+	scanf("%d", &T);
+
+	printf("%d", arr[T + 100]);
 }
