@@ -17,14 +17,15 @@ using namespace std;
 int N,M;
 int visited[1000];
 int arr[1000];
+vector<int> v;
 void dfs(int h){
     if(h==M){
-        for(int i=0;i<M;i++)cout<<arr[i]<<" ";
+        for(int i=0;i<M;i++)cout<<v[arr[i]]<<" ";
         cout<<"\n";
         return;
     }
-    for(int i=1;i<=N;i++){
-        if(visited[i])continue;
+    for(int i=0;i<N;i++){
+        // if(visited[i])continue;
         visited[i]=1;
         arr[h]=i;
         dfs(h+1);
@@ -33,6 +34,9 @@ void dfs(int h){
 }
 void solve(void){
     cin>>N>>M;
+    v.resize(N);
+    for(int i=0;i<N;i++)cin>>v[i];
+    sort(all(v));
     dfs(0);
 }
 int main(void){

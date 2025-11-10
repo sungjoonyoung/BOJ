@@ -14,26 +14,16 @@
 #define minpq(type) priority_queue<type, vector<type>, greater<type>>
 #define maxpq(type) priority_queue<type>
 using namespace std;
-int N,M;
-int visited[1000];
-int arr[1000];
-void dfs(int h){
-    if(h==M){
-        for(int i=0;i<M;i++)cout<<arr[i]<<" ";
-        cout<<"\n";
-        return;
-    }
-    for(int i=1;i<=N;i++){
-        if(visited[i])continue;
-        visited[i]=1;
-        arr[h]=i;
-        dfs(h+1);
-        visited[i]=0;
-    }
-}
 void solve(void){
-    cin>>N>>M;
-    dfs(0);
+    int N;cin>>N;
+    for(int i=0;i<N;i++){
+        for(int j=0;j<N*5;j++)cout<<"@";
+        cout<<"\n";
+    }
+    for(int i=0;i<N*4;i++){
+        for(int j=0;j<N;j++)cout<<"@";
+        cout<<"\n";
+    }
 }
 int main(void){
     ios::sync_with_stdio(0);

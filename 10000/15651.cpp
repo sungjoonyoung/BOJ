@@ -24,7 +24,7 @@ void dfs(int h){
         return;
     }
     for(int i=1;i<=N;i++){
-        if(visited[i])continue;
+        // if(visited[i])continue;
         visited[i]=1;
         arr[h]=i;
         dfs(h+1);
