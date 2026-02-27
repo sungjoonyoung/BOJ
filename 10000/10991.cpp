@@ -1,15 +1,13 @@
-#include<iostream>
-using namespace std;
+#define _CRT_SECURE_NO_WARNINGS
+#include<stdio.h>
 int main(void){
-    ios::sync_with_stdio(0);
-    cin.tie(0);
     int N;
-    cin>>N;
+    scanf("%d",&N);
     for(int f=0;f<N;f++){
-        for(int i=0;i<N-f-1;i++)cout<<" ";
+        for(int i=0;i<N-f-1;i++)printf(" ");
         for(int i=0;i<f+1;i++){
-            cout<<"* ";
+            printf("* ");
         }
-        cout<<"\n";
+        printf("\n");
     }
 }

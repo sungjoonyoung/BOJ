@@ -1,16 +1,14 @@
-#include<iostream>
-using namespace std;
+#define _CRT_SECURE_NO_WARNINGS
+#include<stdio.h>
 int main(void){
-    ios::sync_with_stdio(0);
-    cin.tie(0);
     int in;
-    cin>>in;
-    for(int i=0;i<in+2;i++)cout<<"@";
-    cout<<"\n";
+    scanf("%d",&in);
+    for(int i=0;i<in+2;i++)printf("@");
+    printf("\n");
     for(int i=0;i<in;i++){
-        cout<<"@";
-        for(int j=0;j<in;j++)cout<<" ";
-        cout<<"@\n";
+        printf("@");
+        for(int j=0;j<in;j++)printf(" ");
+        printf("@\n");
     }
-    for(int i=0;i<in+2;i++)cout<<"@";
+    for(int i=0;i<in+2;i++)printf("@");
 }

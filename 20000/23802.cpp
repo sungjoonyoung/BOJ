@@ -1,34 +1,15 @@
-#include<iostream>
-#include<utility>
-#include<vector>
-#include<algorithm>
-#include<cmath>
-#include<queue>
-#define ll long long
-#define pii pair<int,int>
-#define pll pair<ll,ll>
-#define vi vector<int>
-#define vl vector<ll>
-#define all(v) (v).begin(), (v).end()
-#define rall(v) (v).rbegin(), (v).rend()
-#define minpq(type) priority_queue<type, vector<type>, greater<type>>
-#define maxpq(type) priority_queue<type>
-using namespace std;
-void solve(void){
-    int N;cin>>N;
+#define _CRT_SECURE_NO_WARNINGS
+#include<stdio.h>
+
+int main(void){
+    int N;
+    scanf("%d",&N);
     for(int i=0;i<N;i++){
-        for(int j=0;j<N*5;j++)cout<<"@";
-        cout<<"\n";
+        for(int j=0;j<N*5;j++)printf("@");
+        printf("\n");
     }
     for(int i=0;i<N*4;i++){
-        for(int j=0;j<N;j++)cout<<"@";
-        cout<<"\n";
+        for(int j=0;j<N;j++)printf("@");
+        printf("\n");
     }
-}
-int main(void){
-    ios::sync_with_stdio(0);
-    cin.tie(0);
-    int T=1;
-    // cin>>T;
-    while(T--)solve();
 }
