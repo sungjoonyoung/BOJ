@@ -1,14 +1,11 @@
-#include <iostream>
-#include <string>
-
-using namespace std;
-
+#define _CRT_SECURE_NO_WARNINGS
+#include<stdio.h>
 int main(void) {
 	int a, b;
-	cin >> a >> b;
-	cout << a + b <<"\n";
-	cout << a - b << "\n";
-	cout << a * b << "\n";
-	cout << a / b << "\n";
-	cout << a % b << "\n";
+	scanf("%d %d", &a, &b);
+	printf("%d\n", a + b);
+	printf("%d\n", a - b);
+	printf("%d\n", a * b);
+	printf("%d\n", a / b);
+	printf("%d\n", a % b);
 }

@@ -1,11 +1,12 @@
-#include<iostream>
-using namespace std;
+#define _CRT_SECURE_NO_WARNINGS
+#include<stdio.h>
 int main(void) {
-	ios::sync_with_stdio(0);
-	cin.tie(0);
-	int h, m;
-	cin >> h >> m;
-	h = h * 60 + m + 60 * 24 - 45;
-	h %= 60 * 24;
-	cout << h / 60 << " " << h%60;
+	int hh, mm;
+	scanf("%d %d", &hh, &mm);
+
+	int m = hh * 60 + mm;
+	m = m - 45;
+	m = m +  60 * 24;
+	m = m % (60 * 24);
+	printf("%d %d", m / 60, m % 60);
 }

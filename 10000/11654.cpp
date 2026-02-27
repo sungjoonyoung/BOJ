@@ -1,11 +1,7 @@
-#include<iostream>
-using namespace std;
-
+#define _CRT_SECURE_NO_WARNINGS
+#include<stdio.h>
 int main(void) {
-	ios::sync_with_stdio(0);
-	cin.tie(0);
-	cout.tie(0);
-	char N;
-	cin >> N;
-	cout << int(N);
+	char a;
+    scanf("%c",&a); // 문자로서 받고
+    printf("%d",a); // 숫자로서 출력할 겁니다.
 }
