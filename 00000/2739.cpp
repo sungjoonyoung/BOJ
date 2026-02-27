@@ -1,15 +1,10 @@
-#include <iostream>
-#include <string>
-using namespace std;
+#define _CRT_SECURE_NO_WARNINGS
+#include<stdio.h>
 
 int main(void) {
-	ios::sync_with_stdio(0);
-	cin.tie(0);
-	cout.tie(0);
-
 	int N;
-	cin >> N;
+    scanf("%d",&N);
 	for (int i = 1; i < 10; i++) {
-		cout << N << " * " << i << " = " << N * i << "\n";
+        printf("%d * %d = %d\n",N,i,N*i);
 	}
 }

@@ -1,12 +1,7 @@
-#include<iostream>
-#include<vector>
-using namespace std;
-
+#define _CRT_SECURE_NO_WARNINGS
+#include<stdio.h>
 int main(void) {
-	ios::sync_with_stdio(0);
-	cin.tie(0);
-	cout.tie(0);
 	int N;
-	cin >> N;
-	cout << N*(N + 1) / 2;
+	scanf("%d",&N);
+	printf("%d",N*(N+1)/2);
 }
