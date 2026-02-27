@@ -1,17 +1,15 @@
-#include<iostream>
-using namespace std;
+#define _CRT_SECURE_NO_WARNINGS
+#include<stdio.h>
 int main(void) {
-	ios::sync_with_stdio(0);
-	cin.tie(0);
 	int maxnum = -1;
 	int maxind;
 	for (int i = 1; i <= 9; i++) {
 		int in;
-		cin >> in;
+        scanf("%d",&in);
 		if (in > maxnum) {
 			maxnum = in;
 			maxind = i;
 		}
 	}
-	cout << maxnum << "\n" << maxind;
+    printf("%d\n%d",maxnum,maxind);
 }
