@@ -1,19 +1,13 @@
-#include <iostream>
+#include<iostream>
 using namespace std;
-
 int main(void) {
 	ios::sync_with_stdio(0);
 	cin.tie(0);
-
-	string base;
-	int num;
-	int tmp = 0;
-
-	cin >> num;
-	cin >> base;
-	for (int i = 0; i < num; i++) {
-		tmp += base[i];
-		tmp -= 48;
-	}
-	cout << tmp;
+    int N;cin>>N; // 필요 없겠죠?
+	string str;cin>>str;
+    int answer=0;
+    for(int i=0;i<str.size();i++){
+        answer+=str[i]-'0';
+    }
+    cout<<answer;
 }

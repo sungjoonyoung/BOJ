@@ -1,5 +1,4 @@
 #include<iostream>
-#include<string>
 using namespace std;
 int main(void) {
 	ios::sync_with_stdio(0);
@@ -8,6 +7,7 @@ int main(void) {
 	while (N--) {
 		string str;
 		cin >> str;
-		cout << *str.begin() << *(str.end()-1)<<"\n";
+		cout << str.front() << str.back()<<"\n";
+		// cout << *str.begin() << *(str.end()-1)<<"\n";
 	}
 }

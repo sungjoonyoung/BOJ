@@ -15,12 +15,12 @@
 #define maxpq(type) priority_queue<type>
 using namespace std;
 void solve(void) {
-
+    
 }
 int main(void) {
     ios::sync_with_stdio(0);
     cin.tie(0);
-    int T = 1;
-    cin >> T;
-    while (T--)solve();
+    int T=1;
+    cin>>T;
+    while(T--)solve();
 }
