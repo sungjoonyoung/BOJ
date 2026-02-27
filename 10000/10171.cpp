@@ -1,12 +1,7 @@
-#include <iostream>
-#include <string>
-
-using namespace std;
-
+#include<stdio.h>
 int main(void) {
-	cout << "\\    /\\" << "\n";
-	cout << " )  ( ')" << "\n";
-	cout << "(  /  )" << "\n";
-	cout << " \\(__)|" << "\n";
-	
+	printf("\\    /\\\n");
+	printf(" )  ( ')\n");
+	printf("(  /  )\n");
+	printf(" \\(__)|\n");
 }

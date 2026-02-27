@@ -1,7 +1,5 @@
-#include <iostream>
-
-using namespace std;
-
+#define _CRT_SECURE_NO_WARNINGS
+#include<stdio.h>
 int main(void) {
-	cout << "Hello World!";
+	printf("Hello World!");
 }

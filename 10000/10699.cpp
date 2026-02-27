@@ -1,10 +1,5 @@
-#include <iostream>
-#include <string>
-
-using namespace std;
-
+#define _CRT_SECURE_NO_WARNINGS
+#include<stdio.h>
 int main(void) {
-	cout << "2024\-07\-06" << "\n";
-	
-
+    printf("2026-02-27");
 }

@@ -1,7 +1,5 @@
-#include<iostream>
-using namespace std;
-int main(void){
-    ios::sync_with_stdio(0);
-    cin.tie(0);
-    cout<<"I'm Sexy";
+#define _CRT_SECURE_NO_WARNINGS
+#include<stdio.h>
+int main(void) {
+    printf("I'm Sexy");
 }
