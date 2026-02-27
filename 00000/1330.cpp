@@ -1,14 +1,11 @@
-#include <iostream>
-using namespace std;
+#include <stdio.h>
 
 int main(void) {
-	ios::sync_with_stdio(0);
-	cin.tie(0);
-	
+
 	int a, b;
-	cin >> a >> b;
-	
-	if (a > b)cout << ">";
-	else if (a < b)cout << "<";
-	else if (a == b)cout << "==";
+	scanf("%d %d", &a, &b);
+
+	if (a > b)printf(">");
+	if (a < b)printf("<");
+	if (a == b)printf("==");
 }

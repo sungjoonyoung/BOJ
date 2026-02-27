@@ -1,16 +1,13 @@
-#include <iostream>
-using namespace std;
+#include<stdio.h>
 
 int main(void) {
-	ios::sync_with_stdio(0);
-	cin.tie(0);
 
 	int a;
-	cin >> a;
+    scanf("%d",&a);
 
-	if (a > 89) cout << "A";
-	else if (a > 79) cout << "B";
-	else if (a > 69) cout << "C";
-	else if (a > 59) cout << "D";
-	else cout << "F";
+	if (a > 89) printf("A");
+	if (a < 90 && a > 79) printf("B");
+	if (a < 80 && a > 69) printf("C");
+	if (a < 70 && a > 59) printf("D");
+	if (a < 60)printf("F");
 }
