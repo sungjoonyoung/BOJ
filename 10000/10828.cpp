@@ -2,49 +2,40 @@
 #include <string>
 using namespace std;
 
-int arr[10000];
-
+int arr[10000]; // 배열이구요
+int ind = 0;    // 아까 그 빨간 인덱스입니다.
 int main(void) {
-	ios::sync_with_stdio(0);
-	cin.tie(0);
-	cout.tie(0);
-	
-	int N, tmp, idx;
-	string op;
-	idx = 0;
-	cin >> N;
+    ios::sync_with_stdio(0);
+    cin.tie(0);
+    int Q; cin >> Q;
+    while (Q--) {
+        string str; cin >> str;
 
-	for (int i = 0; i < N; i++) {
-		cin >> op;
-		if (op == "push") {
-			cin >> tmp;
-			arr[idx] = tmp;
-			idx++;
-		}
-		if (op == "pop") {
-			if (idx > 0) {
-				idx--;
-				cout << arr[idx]<< "\n";
-				arr[idx] = 0;
-			}
-			else cout << "-1"<< "\n";
-		}
-		if (op == "size") {
-			cout << idx<<"\n";
-			
-		}
-		if (op == "empty") {
-			if (idx > 0) cout << "0"<<"\n";
-			else cout << "1"<< "\n";
-		}
-		if (op == "top") {
-			if (idx > 0) {
-				idx--;
-				cout << arr[idx]<<"\n";
-				idx++;
-			}
-			else cout << "-1"<<"\n";
-		}
-	}
+        if (str == "push") {
+            int in; cin >> in;
+            arr[ind] = in;
+            ind++;
+        }
 
+        if (str == "pop") {
+            if (ind == 0)cout << "-1\n";
+            else {
+                cout << arr[ind - 1] << "\n";
+                ind--;
+            }
+        }
+
+        if (str == "size") {
+            cout << ind << "\n";
+        }
+
+        if (str == "empty") {
+            cout << (ind == 0) << "\n"; // 어때요 이 테크닉 많이 쓰죠?
+        }
+
+        if (str == "top") {
+            if (ind == 0)cout << "-1\n";
+            else cout << arr[ind - 1] << "\n";
+        }
+    }
 }
